@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="*" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
     <PackageReference Include="NUnit" Version="3.14.*" />
     <PackageReference Include="NUnit.Analyzers" Version="3.9.*" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.*" />
