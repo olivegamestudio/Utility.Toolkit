@@ -8,13 +8,14 @@
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="*" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
-    <PackageReference Include="NUnit" Version="3.14.*" />
-    <PackageReference Include="NUnit.Analyzers" Version="3.9.*" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.5.*" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="*" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" />
+		<PackageReference Include="NUnit" Version="3.14.*" />
+		<PackageReference Include="Moq" Version="*" />
+		<PackageReference Include="NUnit.Analyzers" Version="3.9.*" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.5.*" />
+	</ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Utility.Toolkit\Utility.Toolkit.csproj" />

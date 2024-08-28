@@ -3,26 +3,26 @@
 namespace Utility.Toolkit;
 
 /// <summary>
-/// Defines a command with a single generic parameter.
+/// Defines an asynchronous command with a parameter of type <typeparamref name="T"/>.
 /// </summary>
-/// <typeparam name="T">The type of parameter used by the command.</typeparam>
+/// <typeparam name="T">The type of the parameter passed to the command.</typeparam>
 public interface ICommandAsync<in T>
 {
     /// <summary>
-    /// Occurs when changes occur that affect whether the command should execute.
+    /// Occurs when changes occur that affect whether or not the command should execute.
     /// </summary>
     event AsyncEventHandler CanExecuteChanged;
 
     /// <summary>
-    /// Determines whether the command can execute in its current state with the given parameter.
+    /// Determines whether the command can execute in its current state.
     /// </summary>
-    /// <param name="parameter">Data used by the command.</param>
-    /// <returns>true if this command can be executed; otherwise, false.</returns>
+    /// <param name="parameter">The parameter to be passed to the command.</param>
+    /// <returns><c>true</c> if the command can execute; otherwise, <c>false</c>.</returns>
     bool CanExecute(T parameter);
 
     /// <summary>
-    /// Executes the command with the given parameter.
+    /// Executes the command.
     /// </summary>
-    /// <param name="parameter">Data used by the command.</param>
+    /// <param name="parameter">The parameter to be passed to the command.</param>
     void Execute(T parameter);
 }
